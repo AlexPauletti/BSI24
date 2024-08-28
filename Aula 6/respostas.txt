@@ -1,0 +1,9 @@
+1. Algoritmo sequencial = código é executado na ordem
+   Algoritmo com condição = código é executado diferentemente dependendo dos requisitos atingidos
+
+2. Quando precisarmos aplicar uma condição
+
+3. É dado um comando de verificação no algoritmo (como o if) e caso a condição seja atingida, o código é executado
+
+4. O computador mostrará "Seu carro é novo!" e continuará para o restante do código
+

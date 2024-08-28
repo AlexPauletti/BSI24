@@ -1,0 +1,35 @@
+1. Para indicar uma parte da conta que precisa ser resolvida primeiro.
+
+2. a) a + (b*c) + d
+   b) ((a+b)*c) + (d*(a-(2*b)))
+   c) (2*a) + (((c-d)*2)*2)
+   d) (x+y)*(x-y) 
+
+3. ex3.py
+
+4. Menor que (<); Maior que (>); Menor ou igual a (<=); Maior ou igual a (>=); Igual a (==); Diferente a (!=)
+
+5. Quando quisermos comparar informações, definir a relação entre dois valores
+
+6. True (Verdadeiro) / False (Falso) - Valores lógicos
+
+7. a) False
+   b) True
+
+8. a) False
+   b) True
+   c) True
+   d) False
+   e) False
+
+9. a) True
+   b) True
+   c) True
+
+10. a) O valor de x: True
+       O valor de y: False
+       O valor de z: False
+
+    b) O valor de x e y é: False
+    c) O valor de a = 2.2 o valor de b = 3 e o calculo = 3.0
+    d) O valor de a = 2.2 o valor de b = 3 e o calculo = True
