@@ -1,14 +1,32 @@
 import numpy as np
 
-M = 5
-matriz = np.zeros((M,M))
-
-for a in range(M):
-    for b in range(M):
-        matriz[a][b] = input("Informe o valor que queira adicionar à matriz: ")
-        
+matriz = np.zeros((5,5))
+SL = np.zeros(5)
+SC = np.zeros(5)
 soma = 0
-for c in range(M):
-    soma = soma + matriz[3][c]
 
-print(soma)
+for a in range(5):
+    for b in range(5):
+        matriz[a][b] = int(input("Informe o valor que queira adicionar à matriz: "))
+    
+for a in range(5):
+    for b in range(5):
+        soma = soma + matriz[a][b]
+        if b == 4:
+            SL[a] = soma
+            soma = 0
+
+
+for a in range(5):
+    for b in range(5):
+        soma = soma + matriz[b][a]
+        if b == 4:
+            SC[a] = soma
+            soma = 0
+
+
+for b in range(5):
+    print(SL[b], end=' ')
+
+for b in range(5):
+    print(SC[b], end=' ')

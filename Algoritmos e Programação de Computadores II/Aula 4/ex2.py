@@ -1,14 +1,10 @@
-A = set()
-R = set()
+import numpy as np
 
-for a in range(5):
-    receba = int(input("Informe os números vencedores da LOTO: "))
-    R.add(receba)
+M = 5
+matriz = np.zeros((M,M))
 
-for b in range(10):
-    receba2 = int(input("Informe o número que queira apostar na LOTO: "))
-    A.add(receba2)
-
-
-pontos = len(A & R)
-print(pontos)
+for a in range(M):
+    for b in range(M):
+        matriz[b][a] = input("Informe o valor que queira adicionar à matriz: ")
+        
+print(matriz)

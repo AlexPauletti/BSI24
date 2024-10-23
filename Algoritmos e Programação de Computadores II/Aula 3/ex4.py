@@ -1,28 +1,24 @@
-#simulador de tigrinho
-import numpy as np
+nums = []
+primos = []
+pos = []
 
-A = np.zeros(10)
-R = np.zeros(5)
-XL = []
+for a in range(9):
+    tome = int(input("Informe o número que queira adicionar: "))
+    nums.append(tome)
 
-for a in range(5):
-    R[a] = int(input("Informe os 5 números vencedores da LOTO: "))
+fator = 0
+for b in range(9):
+    for c in range(1, nums[b]+1):
+        if nums[b] % c == 0:
+            fator += 1
 
-for b in range(10):
-    A[b] = int(input("Informe 10 números que queira apostar na LOTO: "))
+    if fator == 2:
+        primos.append(nums[b])
+        pos.append(b)
+    
+    fator = 0
 
 
-for c in A:
-    for d in R:
-        if d == c:
-            XL.append(d)
-            
 
-sizeL = len(XL)
-X = np.array(XL)
-
-if sizeL > 0:
-    print(f"Você fez {sizeL} ponto(s)")
-
-else:
-    print("Você não fez pontos.")
+print(primos)
+print(pos)

@@ -1,13 +1,10 @@
-S = set()
-R = set()
+import numpy as np
 
-for a in range(10):
-    receba = int(input("Informe o número que queira adicionar ao vetor S: "))
-    S.add(receba)
+M = 5
+matriz = np.zeros((M,M))
 
-for b in range(5):
-    receba2 = int(input("Informe o número que queira adicionar ao vetor R: "))
-    R.add(receba2)
-
-
-print(S & R)
+for a in range(M):
+    for b in range(M):
+        matriz[a][b] = input("Informe o valor que queira adicionar à matriz: ")
+        
+print(matriz)

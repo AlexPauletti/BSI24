@@ -1,32 +1,14 @@
-import numpy as np
-np.set_printoptions(legacy='1.25')
+A = set()
+R = set()
 
-tamanhoV = 9
-V = np.zeros(9)
-primos = []
-pos = []
+for a in range(5):
+    receba = int(input("Informe os números vencedores da LOTO: "))
+    R.add(receba)
 
-for a in range(tamanhoV):
-    V[a] = int(input("Informe o valor que deseja adicionar: "))
-
-cont = 0
-for b in V:
-    if b == 2:
-            primos.append(b)
-            pos.append(cont)
-            
-    if b%2 == 1:
-        if b == 1:
-            print("Para você que não sabia, 1 não é número primo")
-
-        elif b%3!=0 and b%5!=0 and b%7!=0 and b%9!=0 and b%11!=0:
-            primos.append(b)
-            pos.append(cont)
-    
-    cont += 1
+for b in range(10):
+    receba2 = int(input("Informe o número que queira apostar na LOTO: "))
+    A.add(receba2)
 
 
-print(f"Números primos: {primos}")
-print(f"Suas posições: {pos}")
-
-
+pontos = len(A & R)
+print(pontos)

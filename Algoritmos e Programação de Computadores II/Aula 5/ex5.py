@@ -1,18 +1,10 @@
 import numpy as np
 
-M = 10
-matriz = np.zeros((M,M))
+matriz = np.zeros((2,2))
 
-for a in range(M):
-    for b in range(M):
-        matriz[a][b] = input("Informe o valor que queira adicionar à matriz: ")
-        
-soma = 0
-for c in range(M):
-    soma = soma + matriz[c][1]
+for a in range(2):
+    for b in range(2):
+        matriz[a][b] = int(input("Informe o valor que queira adicionar à matriz: "))
 
-soma2 = 0
-for c in range(M):
-    soma = soma + matriz[c][c]
-
-print(soma, soma2)
+determinante = (matriz[0][0] * matriz[1][1]) - (matriz[0][1] * matriz[1][0])
+print(determinante)
